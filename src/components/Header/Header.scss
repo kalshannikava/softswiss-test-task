@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.header {
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 20px;
+
+  @include md {
+    padding: 0 30px;
+    height: 80px;
+  }
+
+  @include lg {
+    padding: 0 80px;
+    height: 80px;
+  }
+}
+
+.logo {
+  &__icon {
+    margin-right: 5px;
+  }
+}
