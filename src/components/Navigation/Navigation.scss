@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  display: flex;
+
+  @include sm {
+    position: absolute;
+    top: 0;
+    margin-top: 48px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: $fontWeightBold;
+
+    &:hover {
+      background: linear-gradient(98.25deg, $yellow 18.56%, $pink 76.02%);
+      background-size: 100%;
+      background-repeat: repeat;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+
+  &__item {
+    padding: 0 15px;
+
+    @include sm {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  
+  &__cart {
+    &:hover {
+      content: url('../../assets/icons/cartGradient.svg');
+    }
+  }
+}
+
+.burger-menu-toggle {
+  display: none;
+
+  @include sm {
+    & ~ .nav .nav__item {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    &:checked ~ .nav .nav__item {
+      height: 50px;
+      padding: 5px;
+    }
+  }
+}
+
+.burger-menu-button {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include sm {
+    display: flex;
+  }
+}
