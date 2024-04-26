@@ -1,14 +1,26 @@
 /* Colors */
 $pink: #FF70D9;
 $yellow: #EBFF00;
+$yellow60: #EBFF0099;
 $blue: #304571;
 $black: #000000;
 $white: #FFFFFF;
 
 /* Typography */
 $font: "Lato", sans-serif;
-$fontWeightRegular: 400;
 $fontWeightBold: 700;
+$fontWeightExtraBold: 900;
+
+$textFontSizeS: 16px;
+$textFontSizeM: 22px;
+$textFontSizeL: 32px;
+$textMarginS: 17px;
+$textMarginM: 22px;
+$textMarginL: 22px;
+
+$titleFontSizeS: 36px;
+$titleFontSizeM: 48px;
+$titleFontSizeL: 72px;
 
 /* Breakpoints */
 $screen-sm-min: 360px;

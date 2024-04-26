@@ -9,7 +9,7 @@
   padding: 0 20px;
 
   @include md {
-    padding: 0 30px;
+    padding: 0 50px 0 30px;
     height: 80px;
   }
 
@@ -21,6 +21,24 @@
 
 .logo {
   &__icon {
-    margin-right: 5px;
+    margin-right: 4px;
+    width: 24px;
+    height: 24px;
+
+    @include lg {
+      margin-right: 6px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__text {
+    width: 43.1px;
+    height: 17.24px;
+
+    @include lg {
+      width: auto;
+      height: auto;
+    }
   }
 }

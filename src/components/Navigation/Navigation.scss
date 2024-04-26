@@ -34,7 +34,11 @@
   }
 
   &__item {
-    padding: 0 15px;
+    margin: 0 22px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     @include sm {
       display: flex;
