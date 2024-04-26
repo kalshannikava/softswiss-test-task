@@ -66,6 +66,10 @@
       height: 50px;
       padding: 5px;
     }
+
+    &:checked + .burger-menu-button .burger-menu-button__icon {
+      content: url('../../assets/icons/close.svg');
+    }
   }
 }
 

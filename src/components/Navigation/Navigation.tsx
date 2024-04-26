@@ -6,9 +6,7 @@ const Navigation = () => {
   return <nav>
     <input id='burger-menu-toggle' className='burger-menu-toggle' type='checkbox' />
     <label className='burger-menu-button' htmlFor='burger-menu-toggle'>
-      <div className='burger-menu-button__icon'>
-        <img src={menu} alt='menu'/>
-      </div>
+      <img src={menu} alt='menu' className='burger-menu-button__icon' />
     </label>
     <ul className='nav'>
       <li className='nav__item'><a className='nav__link' href='/'>Home</a></li>
