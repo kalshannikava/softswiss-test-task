@@ -56,13 +56,11 @@
 
   @include sm {
     & ~ .nav .nav__item {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
+      display: none;
     }
 
     &:checked ~ .nav .nav__item {
+      display: flex;
       height: 50px;
       padding: 5px;
     }
