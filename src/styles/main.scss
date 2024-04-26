@@ -1,1 +1,6 @@
 @use 'scss-reset/reset';
+@import './variables.scss';
+
+body {
+  font-family: $font;
+}
