@@ -43,10 +43,10 @@
 
   &__title {
     text-align: center;
-    color: $bannerTitleColor;
-    font-weight: $bannerTitleFontWeight;
-    font-size: $bannerTitleFontSizeS;
-    line-height: $bannerTitleLineHeightS;
+    color: $banner-title-color;
+    font-weight: $banner-title-font-weight;
+    font-size: $banner-title-font-size-sm;
+    line-height: $banner-title-line-height-sm;
 
     &--strong {
       color: $pink;
@@ -54,24 +54,24 @@
 
     @include md {
       text-align: left;
-      font-size: $bannerTitleFontSizeM;
-      line-height: $bannerTitleLineHeightM;
+      font-size: $banner-title-font-size-md;
+      line-height: $banner-title-line-height-md;
     }
 
     @include lg {
       text-align: left;
-      font-size: $bannerTitleFontSizeL;
-      line-height: $bannerTitleLineHeightL;
+      font-size: $banner-title-font-size-lg;
+      line-height: $banner-title-line-height-lg;
     }
   }
 
   &__text {
     text-align: center;
-    color: $bannerTextColor;
-    font-weight: $bannerTextFontWeight;
-    font-size: $bannerTextFontSizeS;
-    margin: $textMarginS 0;
-    line-height: $bannerTextLineHeight;
+    color: $banner-text-color;
+    font-weight: $banner-text-font-weight;
+    font-size: $banner-text-font-size-sm;
+    margin: 17px 0;
+    line-height: $banner-text-line-height;
 
     &--strong {
       color: $yellow;
@@ -79,14 +79,14 @@
 
     @include md {
       text-align: left;
-      font-size: $bannerTextFontSizeM;
-      margin: $textMarginM 0;
+      font-size: $banner-text-font-size-md;
+      margin: 22px 0;
     }
 
     @include lg {
       text-align: left;
-      font-size: $bannerTextFontSizeL;
-      margin: $textMarginL 0;
+      font-size: $banner-text-font-size-lg;
+      margin: 22px 0;
     }
   }
 }

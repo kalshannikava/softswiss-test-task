@@ -2,56 +2,56 @@
 
 .article {
   &__title {
-    color: $articleTitleFontColor;
-    font-weight: $articleTitleFontWeight;
-    font-size: $articleTitleFontSizeS;
-    line-height: $articleTitleLineHeightS;
+    color: $article-title-font-color;
+    font-weight: $article-title-font-weight;
+    font-size: $article-title-font-size-sm;
+    line-height: $article-title-line-height-sm;
 
     @include md {
-      font-size: $articleTitleFontSizeM;
-      line-height: $articleTitleLineHeightM;
+      font-size: $article-title-font-size-md;
+      line-height: $article-title-line-height-md;
     }
 
     @include lg {
-      font-size: $articleTitleFontSizeL;
-      line-height: $articleTitleLineHeightL;
+      font-size: $article-title-font-size-lg;
+      line-height: $article-title-line-height-lg;
     }
   }
 
   &__visible-text, &__hidden-text {
     margin: 20px 0;
-    opacity: $articleTextColorOpacity;
-    color: $articleTextFontColor;
-    font-weight: $articleTextFontWeight;
-    font-size: $articleTextFontSizeS;
-    line-height: $articleTextLineHeightS;
+    opacity: $article-text-color-opacity;
+    color: $article-text-font-color;
+    font-weight: $article-text-font-weight;
+    font-size: $article-text-font-size-sm;
+    line-height: $article-text-line-height-sm;
 
     @include md {
-      font-size: $articleTextFontSizeM;
-      line-height: $articleTextLineHeightL;
+      font-size: $article-text-font-size-md;
+      line-height: $article-text-line-height-lg;
     }
 
     @include lg {
-      font-size: $articleTextFontSizeL;
-      line-height: $articleTextLineHeightL;
+      font-size: $article-text-font-size-lg;
+      line-height: $article-text-line-height-lg;
     }
   }
 
   &__read-more,
   &__read-less {
-    color: $articleReadMoreButtonColor;
-    font-weight: $articleReadMoreButtonFontWeight;
-    font-size: $articleReadMoreButtonFontSizeS;
-    line-height: $articleReadMoreButtonLineHeightS;
+    color: $article-read-more-button-color;
+    font-weight: $article-read-more-button-font-weight;
+    font-size: $article-read-more-button-font-size-sm;
+    line-height: $article-read-more-button-line-height-sm;
 
     @include md {
-      font-size: $articleReadMoreButtonFontSizeM;
-      line-height: $articleReadMoreButtonLineHeightM;
+      font-size: $article-read-more-button-font-size-md;
+      line-height: $article-read-more-button-line-height-md;
     }
 
     @include lg {
-      font-size: $articleReadMoreButtonFontSizeL;
-      line-height: $articleReadMoreButtonLineHeightL;
+      font-size: $article-read-more-button-font-size-lg;
+      line-height: $article-read-more-button-line-height-lg;
     }
   }
 

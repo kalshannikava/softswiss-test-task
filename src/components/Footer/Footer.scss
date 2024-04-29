@@ -9,8 +9,8 @@
   height: 127px;
 
   &__text {
-    color: $footerTextColor;
-    font-size: $footerTextFontSizeS;
+    color: $footer-text-color;
+    font-size: $footer-text-font-size-sm;
     position: absolute;
     margin-bottom: -65px;
   }
