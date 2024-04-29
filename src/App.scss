@@ -1,0 +1,37 @@
+@import './styles/variables.scss';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include md {
+    padding-top: 55px;
+    padding-bottom: 52px;
+  }
+
+  @include lg {
+    padding-top: 58px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    font-size: $section-title-font-size-sm;
+    color: $white;
+    font-weight: $font-weight-extra-bold;
+
+
+    @include md {
+      font-size: $section-title-font-size-md;
+    }
+
+    @include lg {
+      font-size: $section-title-font-size-lg;
+    }
+  }
+}
