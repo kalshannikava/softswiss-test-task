@@ -1,0 +1,77 @@
+@use 'sass:math';
+@import './variables.scss';
+
+$grid-columns-lg: 12;
+$grid-sideMargin-lg: 80px;
+$grid-gutter-lg: 40px;
+
+$grid-columns-md: 12;
+$grid-sideMargin-md: 30px;
+$grid-gutter-md: 30px;
+
+$grid-columns-sm: 8;
+$grid-sideMargin-sm: 20px;
+$grid-gutter-sm: 0px;
+
+$grid-width-lg: 100% - (math.div($grid-sideMargin-lg * 2, $screen-lg-min) * 100%);
+$grid-width-md: 100% - (math.div($grid-sideMargin-md * 2, $screen-md-min) * 100%);
+$grid-width-sm: 100% - (math.div($grid-sideMargin-sm * 2, $screen-sm-min) * 100%);
+
+$gutter-lg: math.div($grid-gutter-lg, ($screen-lg-min - ($grid-sideMargin-lg * 2))) * 100%;
+$gutter-md: math.div($grid-gutter-md, ($screen-md-min - ($grid-sideMargin-md * 2))) * 100%;
+$gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2))) * 100%;
+
+@function get-col-width($i, $columns) {
+  @return math.div(100%, $columns) * $i;
+}
+
+@mixin col-styles($i, $columns, $gutter) {
+  box-sizing: border-box;
+  width: get-col-width($i, $columns);
+  padding-left: math.div($gutter, 2);
+  padding-right: math.div($gutter, 2);
+}
+
+@mixin cols-loop($name, $columns, $gutter) {
+  @for $i from 0 through $columns {
+    &-#{$name}-#{$i} {
+      @include col-styles($i, $columns, $gutter);
+    }
+    &-#{$name}-shift-#{$i} {
+      margin-left: get-col-width($i, $columns);
+    }
+  }
+}
+
+@mixin grid-base($width) {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  max-width: $screen-lg-min;
+  width: $width;
+}
+
+.grid {
+  @include grid-base($grid-width-lg);
+  @media screen and (max-width: $screen-md-min) {
+    width: $grid-width-md;
+  }
+  @media screen and (max-width: $screen-sm-min) {
+    width: $grid-width-sm;
+  }
+  &-0 {
+    @include grid-base(100%);
+  }
+}
+
+.col {
+  @include cols-loop(lg, $grid-columns-lg, $gutter-lg);
+  @media screen and (max-width: $screen-md-min) {
+    @include cols-loop(md, $grid-columns-md, $gutter-md);
+  }
+  @media screen and (max-width: $screen-sm-min) {
+    @include cols-loop(sm, $grid-columns-sm, $gutter-sm);
+  }
+}

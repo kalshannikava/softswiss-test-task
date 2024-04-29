@@ -1,4 +1,4 @@
-/* Colors */
+/* COLORS */
 $pink: #FF70D9;
 $yellow: #EBFF00;
 $yellow60: #EBFF0099;
@@ -6,23 +6,85 @@ $blue: #304571;
 $black: #000000;
 $white: #FFFFFF;
 
-/* Typography */
+/* TYPOGRAPHY */
 $font: "Lato", sans-serif;
-$fontWeightBold: 700;
-$fontWeightExtraBold: 900;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;
 
-$textFontSizeS: 16px;
-$textFontSizeM: 22px;
-$textFontSizeL: 32px;
-$textMarginS: 17px;
-$textMarginM: 22px;
-$textMarginL: 22px;
+$section-title-font-size-sm: 18px;
+$section-title-font-size-md: 24px;
+$section-title-font-size-lg: 32px;
 
-$titleFontSizeS: 36px;
-$titleFontSizeM: 48px;
-$titleFontSizeL: 72px;
+/* Button component */
+$button-font-weight: $font-weight-bold;
+$button-font-size-sm: 16px;
 
-/* Breakpoints */
+$button-background-color-primary: $yellow;
+$button-color-primary: $black;
+$button-background-color-primary-hover: $yellow60;
+$button-secondary-color-secondary: transparent;
+$button-color-secondary: $yellow;
+$button-background-color-secondary-hover: $yellow60;
+
+/* Card component */
+$card-title-font-size-sm: 40px;
+$card-title-font-size-md: 40px;
+$card-title-font-size-lg: 74px;
+$card-description-font-size-sm: 16px;
+$card-description-font-size-md: 16px;
+$card-description-font-size-lg: 26x;
+
+/* Article component */
+$article-title-font-color: $white;
+$article-title-font-weight: $font-weight-extra-bold;
+$article-title-font-size-sm: 18px;
+$article-title-font-size-md: 24px;
+$article-title-font-size-lg: 32px;
+$article-title-line-height-sm: 22px;
+$article-title-line-height-md: 29px;
+$article-title-line-height-lg: 38px;
+
+$article-text-font-color: $white;
+$article-text-font-weight: $font-weight-bold;
+$article-text-color-opacity: 0.6;
+$article-text-font-size-sm: 14px;
+$article-text-font-size-md: 16px;
+$article-text-font-size-lg: 20px;
+$article-text-line-height-sm: 17px;
+$article-text-line-height-md: 19px;
+$article-text-line-height-lg: 24px;
+
+$article-read-more-button-color: $yellow;
+$article-read-more-button-font-weight: $font-weight-extra-bold;
+$article-read-more-button-font-size-sm: 14px;
+$article-read-more-button-font-size-md: 16px;
+$article-read-more-button-font-size-lg: 20px;
+$article-read-more-button-line-height-sm: 17px;
+$article-read-more-button-line-height-md: 19px;
+$article-read-more-button-line-height-lg: 24px;
+
+/* Banner component */
+$banner-title-color: $white;
+$banner-title-font-weight: $font-weight-extra-bold;
+$banner-title-font-size-sm: 36px;
+$banner-title-font-size-md: 48px;
+$banner-title-font-size-lg: 72px;
+$banner-title-line-height-sm: 36px;
+$banner-title-line-height-md: 48px;
+$banner-title-line-height-lg: 72px;
+
+$banner-text-color: $white;
+$banner-text-font-weight: $font-weight-extra-bold;
+$banner-text-line-height: 120%;
+$banner-text-font-size-sm: 16px;
+$banner-text-font-size-md: 22px;
+$banner-text-font-size-lg: 32px;
+
+/* Footer component */
+$footer-text-color: $yellow;
+$footer-text-font-size-sm: 18px;
+
+/* BREAKPOINTS */
 $screen-sm-min: 360px;
 $screen-sm-max: 767px;
 $screen-md-min: 768px;
