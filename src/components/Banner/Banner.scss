@@ -2,17 +2,23 @@
 
 .banner {
   height: 452px;
-  background: url('../../assets/images/earth.png'), url('../../assets/images/spaceBanner.png');
+  background: url('../../assets/images/earth.png'), url('../../assets/images/spaceBanner-sm.png');
   background-position: center -118px, right 0;
   background-repeat: no-repeat;
   background-size: 336px, cover;
 
   @include md {
+    background: url('../../assets/images/earth.png'), url('../../assets/images/spaceBanner-md.png');
+    background-repeat: no-repeat;
     background-position: 550px center, right 0;
+    background-size: 336px, cover;
   }
 
   @include lg {
+    background: url('../../assets/images/earth.png'), url('../../assets/images/spaceBanner-lg.png');
+    background-repeat: no-repeat;
     background-position: 850px center, right 0;
+    background-size: 336px, cover;
   }
 
   &__content {

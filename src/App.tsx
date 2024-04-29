@@ -20,9 +20,17 @@ function App() {
       </div>
       <main className='content grid'>
         <h2 className='content__title col-sm-8 col-md-12 col-lg-12'>Offers</h2>
-        {cards.map(({ id, title, description, background, classNames, titleSize }) =>
+        {cards.map(({ id, title, description, backgroundL, backgroundM, backgroundS, classNames, titleSize }) =>
           <div className={classNames} key={`card_container_${id}`}>
-            <Card title={title} description={description} background={background} titleSize={titleSize} key={`card_${id}`} />
+            <Card
+              title={title}
+              description={description}
+              backgroundL={backgroundL}
+              backgroundM={backgroundM}
+              backgroundS={backgroundS}
+              titleSize={titleSize}
+              key={`card_${id}`}
+            />
           </div>)}
         {articles.map(({ id, visibleText, hiddenText, title, classNames }) =>
           <Article title={title} visibleText={visibleText} hiddenText={hiddenText} key={id} className={classNames}  />)}
