@@ -1,13 +1,21 @@
-import space1 from './assets/images/space1.png';
-import space2 from './assets/images/space2.png';
-import space3 from './assets/images/space3.png';
-import space4 from './assets/images/space4.png';
+import space1Lg from './assets/images/space1-lg.png';
+import space1Sm from './assets/images/space1-sm.png';
+import space2Lg from './assets/images/space2-lg.png';
+import space2Md from './assets/images/space2-md.png';
+import space2Sm from './assets/images/space2-sm.png';
+import space3Lg from './assets/images/space3-lg.png';
+import space3Md from './assets/images/space3-md.png';
+import space3Sm from './assets/images/space3-sm.png';
+import space4Lg from './assets/images/space4-lg.png';
+import space4Sm from './assets/images/space4-sm.png';
 
 export const cards: {
   id: number,
   title: string,
   description: string,
-  background: string,
+  backgroundL: string,
+  backgroundM: string,
+  backgroundS: string,
   classNames: string,
   titleSize: 'large' | 'small',
 }[] = [
@@ -15,7 +23,9 @@ export const cards: {
     id: 1,
     title: 'Move the borders of reality!',
     description: 'Go on a space adventure',
-    background: space1,
+    backgroundL: space1Lg,
+    backgroundM: space1Lg,
+    backgroundS: space1Sm,
     classNames: 'col-sm-8 col-md-6 col-lg-12',
     titleSize: 'large',
   },
@@ -23,7 +33,9 @@ export const cards: {
     id: 2,
     title: 'Space is not just stars and planets',
     description: 'it is a majestic journey to',
-    background: space2,
+    backgroundL: space2Lg,
+    backgroundM: space2Md,
+    backgroundS: space2Sm,
     classNames: 'col-sm-8 col-md-6 col-lg-6',
     titleSize: 'small',
   },
@@ -31,7 +43,9 @@ export const cards: {
     id: 3,
     title: 'For those who dream of stars',
     description: 'Our offer: make your dream come true',
-    background: space3,
+    backgroundL: space3Lg,
+    backgroundM: space3Md,
+    backgroundS: space3Sm,
     classNames: 'col-sm-8 col-md-6 col-lg-6',
     titleSize: 'small',
   },
@@ -39,7 +53,9 @@ export const cards: {
     id: 4,
     title: 'Fulfill your fantastic dreams',
     description: 'Space has never been so close',
-    background: space4,
+    backgroundL: space4Lg,
+    backgroundM: space4Lg,
+    backgroundS: space4Sm,
     classNames: 'col-sm-8 col-md-6 col-lg-12',
     titleSize: 'large',
   },
