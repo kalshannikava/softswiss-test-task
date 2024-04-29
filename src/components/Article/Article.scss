@@ -1,0 +1,72 @@
+@import '../../styles/variables.scss';
+
+.article {
+  &__title {
+    color: $articleTitleFontColor;
+    font-weight: $articleTitleFontWeight;
+    font-size: $articleTitleFontSizeS;
+    line-height: $articleTitleLineHeightS;
+
+    @include md {
+      font-size: $articleTitleFontSizeM;
+      line-height: $articleTitleLineHeightM;
+    }
+
+    @include lg {
+      font-size: $articleTitleFontSizeL;
+      line-height: $articleTitleLineHeightL;
+    }
+  }
+
+  &__visible-text, &__hidden-text {
+    margin: 20px 0;
+    opacity: $articleTextColorOpacity;
+    color: $articleTextFontColor;
+    font-weight: $articleTextFontWeight;
+    font-size: $articleTextFontSizeS;
+    line-height: $articleTextLineHeightS;
+
+    @include md {
+      font-size: $articleTextFontSizeM;
+      line-height: $articleTextLineHeightL;
+    }
+
+    @include lg {
+      font-size: $articleTextFontSizeL;
+      line-height: $articleTextLineHeightL;
+    }
+  }
+
+  &__read-more,
+  &__read-less {
+    color: $articleReadMoreButtonColor;
+    font-weight: $articleReadMoreButtonFontWeight;
+    font-size: $articleReadMoreButtonFontSizeS;
+    line-height: $articleReadMoreButtonLineHeightS;
+
+    @include md {
+      font-size: $articleReadMoreButtonFontSizeM;
+      line-height: $articleReadMoreButtonLineHeightM;
+    }
+
+    @include lg {
+      font-size: $articleReadMoreButtonFontSizeL;
+      line-height: $articleReadMoreButtonLineHeightL;
+    }
+  }
+
+  /* READ MORE/LESS LOGIC */
+  &__hidden-text,
+  &__read-less {
+    display: none;
+  }
+
+  &__read-more-checkbox:checked ~ &__hidden-text,
+  &__read-more-checkbox:checked ~ &__read-less {
+    display: block;
+  }
+
+  &__read-more-checkbox:checked ~ &__read-more {
+    display: none;
+  }
+}
