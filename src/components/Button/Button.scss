@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.button {
+  box-sizing: border-box;
+  font-weight: $button-font-weight;
+  font-size: $button-font-size-sm;
+  padding: 7px 40px;
+  border-radius: 100px;
+
+  &--primary {
+    background-color: $button-background-color-primary;
+    color: $button-color-primary;
+
+    &:hover {
+      background-color: $button-background-color-primary-hover;
+    }
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $button-color-secondary;
+    border: 2px solid $button-color-secondary;
+
+    &:hover {
+      border: 2px solid $button-background-color-secondary-hover;
+      color: $button-background-color-secondary-hover;
+    }
+  }
+}
