@@ -1,0 +1,92 @@
+@import '../../styles/variables.scss';
+
+.banner {
+  height: 452px;
+  background: url('../../assets/images/earth.png'), url('../../assets/images/spaceBanner.png');
+  background-position: center -118px, right 0;
+  background-repeat: no-repeat;
+  background-size: 336px, cover;
+
+  @include md {
+    background-position: 550px center, right 0;
+  }
+
+  @include lg {
+    background-position: 850px center, right 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 44px;
+    width: 100%;
+    height: 100%;
+
+    @include md {
+      justify-content: center;
+      align-items: start;
+  
+      padding: 30px;
+      width: 59%;
+    }
+  
+    @include lg {
+      justify-content: center;
+      align-items: start;
+  
+      padding: 81px;
+      width: 62%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: $bannerTitleColor;
+    font-weight: $bannerTitleFontWeight;
+    font-size: $bannerTitleFontSizeS;
+    line-height: $bannerTitleLineHeightS;
+
+    &--strong {
+      color: $pink;
+    }
+
+    @include md {
+      text-align: left;
+      font-size: $bannerTitleFontSizeM;
+      line-height: $bannerTitleLineHeightM;
+    }
+
+    @include lg {
+      text-align: left;
+      font-size: $bannerTitleFontSizeL;
+      line-height: $bannerTitleLineHeightL;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: $bannerTextColor;
+    font-weight: $bannerTextFontWeight;
+    font-size: $bannerTextFontSizeS;
+    margin: $textMarginS 0;
+    line-height: $bannerTextLineHeight;
+
+    &--strong {
+      color: $yellow;
+    }
+
+    @include md {
+      text-align: left;
+      font-size: $bannerTextFontSizeM;
+      margin: $textMarginM 0;
+    }
+
+    @include lg {
+      text-align: left;
+      font-size: $bannerTextFontSizeL;
+      margin: $textMarginL 0;
+    }
+  }
+}
