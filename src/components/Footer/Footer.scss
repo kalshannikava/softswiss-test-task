@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 127px;
+
+  &__text {
+    color: $footerTextColor;
+    font-size: $footerTextFontSizeS;
+    position: absolute;
+    margin-bottom: -65px;
+  }
+
+  &__icon {
+    position: absolute;
+    margin-top: -20px;
+    filter: drop-shadow(0px 20.6431px 15.3349px rgba(0, 0, 0, 0.25));
+    transform: rotate(64.48deg);
+  }
+}
