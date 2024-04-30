@@ -1,4 +1,5 @@
-Figma design: https://www.figma.com/file/pEaDUWSceEGtJvpcfA1AWZ/TEST-(Copy)?type=design&node-id=84%3A212&mode=design&t=gFQxKWGBY8XTEo7B-1
+[Figma Design](https://www.figma.com/file/pEaDUWSceEGtJvpcfA1AWZ/TEST-(Copy)?type=design&node-id=84%3A212&mode=design&t=gFQxKWGBY8XTEo7B-1)
+[Live Demo](https://kalshannikava.github.io/softswiss-test-task/)
 
 Stack: React, Typescript, SASS.
 
