@@ -35,7 +35,7 @@ function App() {
         {articles.map(({ id, visibleText, hiddenText, title, classNames }) =>
           <Article title={title} visibleText={visibleText} hiddenText={hiddenText} key={id} className={classNames}  />)}
       </main>
-      <div className='grid-0'>
+      <div className='grid-0 app__footer-container'>
         <Footer className='col-sm-8 col-md-12 col-lg-12' />
       </div>
     </div>

@@ -4,6 +4,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  &__footer-container {
+    margin-top: auto;
+  }
 }
 
 .content {

@@ -1,30 +1,43 @@
 @use 'sass:math';
 @import './variables.scss';
 
-$grid-columns-lg: 12;
+/* Base variables */
+$grid-columns-lg: 12; // Number of columns for large screens
 $grid-sideMargin-lg: 80px;
 $grid-gutter-lg: 40px;
 
-$grid-columns-md: 12;
+$grid-columns-md: 12; // Number of columns for medium screens
 $grid-sideMargin-md: 30px;
 $grid-gutter-md: 30px;
 
-$grid-columns-sm: 8;
+$grid-columns-sm: 8; // Number of columns for small screens
 $grid-sideMargin-sm: 20px;
 $grid-gutter-sm: 0px;
 
-$grid-width-lg: 100% - (math.div($grid-sideMargin-lg * 2, $screen-lg-min) * 100%);
-$grid-width-md: 100% - (math.div($grid-sideMargin-md * 2, $screen-md-min) * 100%);
-$grid-width-sm: 100% - (math.div($grid-sideMargin-sm * 2, $screen-sm-min) * 100%);
+/* Width converted to percents */
+@function grid-width-to-percents($sideMargin, $width) {
+  @return 100% - (math.div($sideMargin * 2, $width) * 100%);
+}
 
-$gutter-lg: math.div($grid-gutter-lg, ($screen-lg-min - ($grid-sideMargin-lg * 2))) * 100%;
-$gutter-md: math.div($grid-gutter-md, ($screen-md-min - ($grid-sideMargin-md * 2))) * 100%;
-$gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2))) * 100%;
+$grid-width-lg: grid-width-to-percents($grid-sideMargin-lg, $screen-lg-min);
+$grid-width-md: grid-width-to-percents($grid-sideMargin-md, $screen-md-min);
+$grid-width-sm: grid-width-to-percents($grid-sideMargin-sm, $screen-sm-min);
 
+/* Gutter converted to percents */
+@function grid-gutter-to-percents($gutter, $width, $sideMargin) {
+  @return math.div($gutter, ($width - ($sideMargin * 2))) * 100%;;
+}
+
+$gutter-lg: grid-gutter-to-percents($grid-gutter-lg, $screen-lg-min, $grid-sideMargin-lg);
+$gutter-md: grid-gutter-to-percents($grid-gutter-md, $screen-md-min, $grid-sideMargin-md);
+$gutter-sm: grid-gutter-to-percents($grid-gutter-sm, $screen-sm-min, $grid-sideMargin-sm);
+
+/* Width of column based on it's index number */
 @function get-col-width($i, $columns) {
   @return math.div(100%, $columns) * $i;
 }
 
+/* Shared column styles */
 @mixin col-styles($i, $columns, $gutter) {
   box-sizing: border-box;
   width: get-col-width($i, $columns);
@@ -32,6 +45,7 @@ $gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2
   padding-right: math.div($gutter, 2);
 }
 
+/* Generates $columns number of columns */
 @mixin cols-loop($name, $columns, $gutter) {
   @for $i from 0 through $columns {
     &-#{$name}-#{$i} {
@@ -43,6 +57,7 @@ $gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2
   }
 }
 
+/* Shared grid styles */
 @mixin grid-base($width) {
   box-sizing: border-box;
   display: flex;
@@ -54,10 +69,10 @@ $gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2
 
 .grid {
   @include grid-base($grid-width-lg);
-  @media screen and (max-width: $screen-md-min) {
+  @media screen and (min-width: $screen-md-min) {
     width: $grid-width-md;
   }
-  @media screen and (max-width: $screen-sm-min) {
+  @media screen and (min-width: $screen-sm-min) {
     width: $grid-width-sm;
   }
   &-0 {
@@ -67,10 +82,10 @@ $gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2
 
 .col {
   @include cols-loop(lg, $grid-columns-lg, $gutter-lg);
-  @media screen and (max-width: $screen-md-min) {
+  @media screen and (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
     @include cols-loop(md, $grid-columns-md, $gutter-md);
   }
-  @media screen and (max-width: $screen-sm-min) {
+  @media screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
     @include cols-loop(sm, $grid-columns-sm, $gutter-sm);
   }
 }
