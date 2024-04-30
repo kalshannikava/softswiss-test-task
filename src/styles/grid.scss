@@ -49,7 +49,6 @@ $gutter-sm: math.div($grid-gutter-sm, ($screen-sm-min - ($grid-sideMargin-sm * 2
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-  max-width: $screen-lg-min;
   width: $width;
 }
 
