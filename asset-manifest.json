@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/softswiss-test-task/static/css/main.e0ebaf19.css",
+    "main.js": "/softswiss-test-task/static/js/main.d7963a3d.js",
+    "static/js/453.f586bd0b.chunk.js": "/softswiss-test-task/static/js/453.f586bd0b.chunk.js",
+    "static/media/spaceBanner-lg.png": "/softswiss-test-task/static/media/spaceBanner-lg.a8c0fc52e6829177daf0.png",
+    "static/media/spaceBanner-md.png": "/softswiss-test-task/static/media/spaceBanner-md.6b769fb448e3bdd129ee.png",
+    "static/media/space4-lg.png": "/softswiss-test-task/static/media/space4-lg.889d2bd227bb4309a7c8.png",
+    "static/media/space1-lg.png": "/softswiss-test-task/static/media/space1-lg.0544f58f24a094455cfe.png",
+    "static/media/space3-lg.png": "/softswiss-test-task/static/media/space3-lg.7b37ca9b3c5bdbcdd091.png",
+    "static/media/rocket.svg": "/softswiss-test-task/static/media/rocket.024f4a369dab2bfa89b0579b2df4c4e5.svg",
+    "static/media/spaceBanner-sm.png": "/softswiss-test-task/static/media/spaceBanner-sm.310a95642c47d65523a3.png",
+    "static/media/space2-lg.png": "/softswiss-test-task/static/media/space2-lg.7b64473bfff47431d7a5.png",
+    "static/media/space3-md.png": "/softswiss-test-task/static/media/space3-md.d1e8f2cf025a0f168f93.png",
+    "static/media/space2-md.png": "/softswiss-test-task/static/media/space2-md.ea693f5d4464faddb849.png",
+    "static/media/space1-sm.png": "/softswiss-test-task/static/media/space1-sm.4f938ac3c035792c3d3f.png",
+    "static/media/space3-sm.png": "/softswiss-test-task/static/media/space3-sm.e116f372ec1ca829cd50.png",
+    "static/media/space4-sm.png": "/softswiss-test-task/static/media/space4-sm.e116f372ec1ca829cd50.png",
+    "static/media/earth.png": "/softswiss-test-task/static/media/earth.372364f3e3f86d887a25.png",
+    "static/media/space2-sm.png": "/softswiss-test-task/static/media/space2-sm.db087305d2b21589000e.png",
+    "static/media/logoText.svg": "/softswiss-test-task/static/media/logoText.6280a3954ecb02c0bf67dc9125f93945.svg",
+    "static/media/logo.svg": "/softswiss-test-task/static/media/logo.abb7e9ca6e1d2224fa9253c60ef4cfb6.svg",
+    "static/media/cartGradient.svg": "/softswiss-test-task/static/media/cartGradient.130703b7b0cf9871648f.svg",
+    "static/media/cart.svg": "/softswiss-test-task/static/media/cart.5fdc8f10c95015c32240615c1ad34fbf.svg",
+    "static/media/menu.svg": "/softswiss-test-task/static/media/menu.7e65dcdbfcb4fb7f60ea90f61a0ab5f8.svg",
+    "static/media/close.svg": "/softswiss-test-task/static/media/close.60d4f41347544050a7b9.svg",
+    "index.html": "/softswiss-test-task/index.html",
+    "main.e0ebaf19.css.map": "/softswiss-test-task/static/css/main.e0ebaf19.css.map",
+    "main.d7963a3d.js.map": "/softswiss-test-task/static/js/main.d7963a3d.js.map",
+    "453.f586bd0b.chunk.js.map": "/softswiss-test-task/static/js/453.f586bd0b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0ebaf19.css",
+    "static/js/main.d7963a3d.js"
+  ]
+}
