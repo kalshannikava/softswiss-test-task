@@ -10,6 +10,10 @@ const getDimensions = (): Dimensions  => {
   };
 };
 
+/**
+ * Returns window's width and height.
+ * @returns {Dimensions} dimensions - width and height.
+ */
 const useWindowSize = (): Dimensions => {
   const [dimensions, setDimensions] = useState<Dimensions>(getDimensions());
 
