@@ -1,4 +1,4 @@
-This is test task for SOFTSWISS. Figma design: https://www.figma.com/file/pEaDUWSceEGtJvpcfA1AWZ/TEST-(Copy)?type=design&node-id=84%3A212&mode=design&t=gFQxKWGBY8XTEo7B-1
+Figma design: https://www.figma.com/file/pEaDUWSceEGtJvpcfA1AWZ/TEST-(Copy)?type=design&node-id=84%3A212&mode=design&t=gFQxKWGBY8XTEo7B-1
 
 Stack: React, Typescript, SASS.
 
